@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyAttack : MonoBehaviour
-{
+public class EnemyAttack : MonoBehaviour{
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 10;
 
@@ -15,8 +14,7 @@ public class EnemyAttack : MonoBehaviour
     float timer;
 
 
-    void Awake ()
-    {
+    void Awake (){
         player = GameObject.FindGameObjectWithTag ("Player");
         playerHealth = player.GetComponent <PlayerHealth> ();
         enemyHealth = GetComponent<EnemyHealth>();
@@ -24,46 +22,37 @@ public class EnemyAttack : MonoBehaviour
     }
 
 
-    void OnTriggerEnter (Collider other)
-    {
-        if(other.gameObject == player)
-        {
+    void OnTriggerEnter (Collider other){
+        if(other.gameObject == player){
             playerInRange = true;
         }
     }
 
 
-    void OnTriggerExit (Collider other)
-    {
-        if(other.gameObject == player)
-        {
+    void OnTriggerExit (Collider other){
+        if(other.gameObject == player){
             playerInRange = false;
         }
     }
 
 
-    void Update ()
-    {
+    void Update (){
         timer += Time.deltaTime;
 
-        if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
-        {
+        if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0){
             Attack ();
         }
 
-        if(playerHealth.currentHealth <= 0)
-        {
+        if(playerHealth.currentHealth <= 0){
             anim.SetTrigger ("PlayerDead");
         }
     }
 
 
-    void Attack ()
-    {
+    void Attack (){
         timer = 0f;
 
-        if(playerHealth.currentHealth > 0)
-        {
+        if(playerHealth.currentHealth > 0){
             playerHealth.TakeDamage (attackDamage);
         }
     }

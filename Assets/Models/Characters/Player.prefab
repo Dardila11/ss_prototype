@@ -2922,10 +2922,10 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b4932314ba6446eaa129e4479b2b9f8, type: 2}
-  - {fileID: 2100000, guid: f01595531942f416f9a32846dc5ad883, type: 2}
   - {fileID: 0}
-  - {fileID: 2100000, guid: d98b2b027ef3441cdb7e50063e0c463a, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3101,8 +3101,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: afaa10ffac0b3403f931fe35ea68c650, type: 2}
-  - {fileID: 2100000, guid: b991f461d792a4a1da4622236daabce9, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3189,7 +3189,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: afaa10ffac0b3403f931fe35ea68c650, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3940,7 +3940,7 @@ GameObject:
   - component: {fileID: 143000012612059008}
   m_Layer: 2
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3971,7 +3971,7 @@ Animator:
   m_GameObject: {fileID: 1000013999073852}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4138e2ce9507a4dcd80e3ce926947365, type: 3}
-  m_Controller: {fileID: 9100000, guid: adda0e1e5e5364156a5cda03232479ec, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

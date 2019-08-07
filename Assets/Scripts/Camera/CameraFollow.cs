@@ -8,9 +8,7 @@ public class CameraFollow : MonoBehaviour
    public float smoothing = 5f;
    Vector3 offset;
 
-   void Start()
-
-       {
+   void Start(){
            offset = transform.position - target.position;// quitamos la posision de objeto a seguir
        }
 
